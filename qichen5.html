@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+	.qichen{background: url(images/bg01.jpg);margin: 0 auto;width:640px;height: 1008px;position: relative;}
+	.qc_top{width: 478px;margin: 0 auto;}
+	.img{padding-top: 40px;margin: 0 auto;width: 312px;}
+	.qc_top img{width: 312px;height: 75px;}
+	.qc_top p{font-size: 20px;color:#666D70;line-height: 40px;margin: 20px 0;}
+	#qc_con{width: 594px;margin: 0 auto;}
+	#xingm{background: url(images/shuru1.jpg);width: 594px;height:86px;margin-bottom: 5px;position: relative;}
+	.ipt{width:496px;height: 84px;background: transparent;position: absolute;left:95px;top: 0px;font-size: 25px;color: #C6C6C6;}
+	#haoma{background: url(images/shuru2.jpg);width: 594px;height: 86px;margin-bottom: 30px;position: relative;}
+	#tijiao{width: 433px;height: 97px;
+	background: url(images/btn01.png);margin-bottom: 30px;margin: 0 auto;}
+	button{width: 433px;height: 97px;cursor:pointer;border-radius: 25px;background:transparent;border: none;font-size:50px;line-height: 97px;color:#FDFAFA;font-weight:900;font-style: italic;
+	text-shadow:0px 0px 10px rgba(182,57,220,0.8),
+	0px 0px 15px rgba(182,57,220,0.7),
+	0px 0px 20px rgba(182,57,220,0.6),
+	0px 0px 25px rgba(182,57,220,0.5);}
+	#gz{width: 175px;margin: 30px auto;}
+	#gz a{color:#003898;font-size:38px;font-weight:900;text-align: center;font-style: italic;text-decoration: underline;}
+	#fx{font-size: 24px;color: #616B72;font-weight: 900;margin-top: 40px;float: left;}
+	#png{margin-top: 20px;height:68px;float: left;margin-left: 10px;}
+	#png img{margin:0 10px;float: left;cursor: pointer;}
+	#mask{width: 100%;height: 100%;background: #000;opacity: 0.5;filter:alpha(opacity=50);position: absolute;left: 0;top: 0;display: none;}
+	#cg{width: 582px;height: 380px;border: 8px solid #01266E;border-radius: 25px 25px 25px 25px;background: #fff;position: absolute;left: 20px; top:145px;display: none;}
+	#bu{width: 433px;height: 97px;
+	background: url(images/btn01.png);margin-bottom: 30px;margin: 0 auto;}
+	#cg h2{font-size: 50px;text-align: center;color:#022876;padding-top: 60px;font-weight: 900;}
+	#cg p{font-size: 28px;color: #666;width: 412px;margin: 30px auto;}
+	#gzsm{height: 725px;width:596px;
+	border-radius: 25px 25px 25px 25px;
+	border: 6px solid #012670;
+	position: absolute;
+	top: 40px;
+	left:16px;
+	background: #FFFFFF;
+	display: none;
+	}
+	.gzsm_con{width: 500px;padding-top: 50px;padding-left: 50px;}
+	.gzsm_con h2{font-size: 25px;color:#0A2C5F;margin-bottom: 20px;font-weight: 900;}
+	.gzsm_con ol{font-size: 20px;color:#6B6B6B;line-height: 35px;font-weight: 900;}
+	#zhidao{width: 320px;height: 72px;
+	background: url(images/btn01.png);
+	background-size:contain;
+	margin: 20px auto;}
+	#zhidao a{width:320px;height: 72px;cursor:pointer;border-radius: 25px;background: transparent;border: none;font-size:30px;line-height: 72px;color:#FDFAFA;font-weight:900;font-style: italic;
+	text-shadow:0px 0px 10px rgba(182,57,220,0.8),
+	0px 0px 15px rgba(182,57,220,0.7),
+	0px 0px 20px rgba(182,57,220,0.6),
+	0px 0px 25px rgba(182,57,220,0.5);
+	padding-left: 110px;
+}
+</style>
+</head>
+<body>
+	<div class="qichen">
+		<div id="mask"></div>
+		<div class="qc_top">
+			<div class="img">
+				<img src="images/qckhj.png" alt="">
+			</div>
+			<p>考验人品的时候到了,只要留下您的姓名和联系方式就有机会抽取启辰R30、启辰晨风一年使用权大奖。</p>
+		</div>
+		<div id="qc_con">
+			<div id="xingm">
+				<input type="text" class="ipt" value="请输入姓名">
+			</div>
+			<div id="haoma">
+				<input type="text" class="ipt" value="请输入手机号码">
+			</div>
+			<div id="tijiao">
+				<button>提&nbsp;交</button>
+			</div>
+			<div id="gz">
+				<a href="javascript:;">活动规则:</a>
+			</div>
+			<div id="fx">分享好友积攒人品:</div>
+			<div id="png">
+				<img src="images/weixin.png" alt="">
+				<img src="images/xlwb.png" alt="">
+				<img src="images/txwb.png" alt="">
+			</div>
+		</div>
+		<div id="cg">
+			<h2>提交成功！</h2>
+			<p>说好的16:00现场抽奖，启辰展台与您不见不散！</p>
+			<div id="bu">
+				<button>不见不散</button>
+			</div>
+		</div>
+		<div id="gzsm">
+			<div class="gzsm_con">
+				<h2>活动规则</h2>
+				<ol>
+					<li>广州车展期间：关注启辰官方微信，参与“码上有礼，辰心放送”活动并留下本人姓名及手机号码，即可参与。</li>
+					<li>11月21日至11月29日，每天抽取一台启辰R30一年使用大全（现场兑奖）。11月29日抽取终极大奖：一台启辰辰风一年使用权。</li>
+					<li>每天16：00对当天所有参与者进行抽选，抽中的参与者如不在现场，将取消中奖者自个并继续抽奖（启辰晨风一年使用权除外）。</li>
+					<li>终极大奖重车展期间所有参与者中抽取，后续联系进行兑奖。</li>
+					<li>此活动每人仅限参与一次。</li>
+					<li>本活动最终解释权归东风日产启辰所有。</li>
+				</ol>
+				<div id="zhidao">
+					<a href="javascript:;">知道了</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+var xingm=document.getElementById('xingm');
+var haoma=document.getElementById('haoma');
+var tijiao=document.getElementById('tijiao');
+var gz=document.getElementById('gz');
+var cg=document.getElementById('cg');
+var bu=document.getElementById('bu');
+var gzsm=document.getElementById('gzsm');
+var zhidao=document.getElementById('zhidao');
+var aa=zhidao.getElementsByTagName('a')[0];
+var a=gz.getElementsByTagName('a')[0];
+var ipt1=xingm.getElementsByTagName('input')[0];
+var ipt2=haoma.getElementsByTagName('input')[0];
+var btn1=tijiao.getElementsByTagName('button')[0];
+var btn2=bu.getElementsByTagName('button')[0];
+window.onload=function(){
+	ipt1.onfocus=function(){
+		if(ipt1.value=='请输入姓名'){
+			ipt1.value='';
+			ipt1.style.color='#000';
+		}
+	}
+	ipt1.onblur=function(){
+		if(ipt1.value==''){
+			ipt1.value='请输入姓名';
+			ipt1.style.color='#C6C6C6';
+		}
+	}
+	ipt2.onfocus=function(){
+		if(ipt2.value=='请输入手机号码'){
+			ipt2.value='';
+			ipt2.style.color='#000';
+		}
+	}
+	ipt2.onblur=function(){
+		if(ipt2.value==''){
+			ipt2.value='请输入手机号码';
+			ipt2.style.color='#C6C6C6';
+		}
+	}
+	btn1.onclick=function(){
+		if(ipt1.value=='请输入姓名'||ipt2.value=='请输入手机号码'||ipt1.value==''||ipt2.value==''){
+			alert("亲，请输入姓名与电话号码！");
+		}else{
+			cg.style.display="block";
+			mask.style.display='block';
+		}
+	}
+	btn2.onclick=function(){
+		cg.style.display='none';
+		mask.style.display='none';
+		ipt1.value='';
+		ipt2.value='';
+	}
+	a.onclick=function(){
+		mask.style.display='block';
+		gzsm.style.display='block';
+	}
+	aa.onclick=function(){
+		mask.style.display='none';
+		gzsm.style.display='none';
+	}
+}
+</script>
+</html>

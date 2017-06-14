@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+	.qichen{background: url(images/bg01.jpg);margin: 0 auto;width:640px;height: 1008px;position: relative;}
+	.qc_top{font-size: 30px;color:#012672;text-align: center;font-weight: 900;padding-top: 50px;margin-bottom: 20px;}
+	.qc_con{background: #fff;width: 485px;margin: 20px auto;}
+	.qc_con p{font-size: 20px;color: #828282;text-align: center;padding-top: 10px;}
+	.con_sz{background: url(images/bg03.jpg);margin:20px auto;width: 418px;height: 75px;position: relative;}
+	.q,.w,.e,.r,.t{position: absolute;top: 20px;font-size: 30px;color: #fff;z-index: 5;}
+	.q{left: 45px;}
+	.w{left: 130px;}
+	.e{left: 215px;}
+	.r{left: 295px;}
+	.t{left: 370px;}
+	.qc_con img{width: 485px;height: 294px;}
+	.qc_footer{width: 510px;margin: 20px auto;padding-left: 22px;}
+	.qc_footer h2{font-size: 24px;color: #012572;font-weight: 900;}
+	.qc_footer p{color: #616B72;font-size: 18px;margin: 10px 0;font-weight: 900;}
+	#kai{width: 320px;height: 72px;
+	background: url(images/btn01.png);
+	background-size:contain;
+	margin: 20px auto;}
+	#kai a{
+	width:320px;height: 72px;cursor:pointer;border-radius: 25px;background: transparent;border: none;font-size:30px;line-height: 72px;color:#FDFAFA;font-weight:900;font-style: italic;
+	text-shadow:0px 0px 10px rgba(182,57,220,0.8),
+	0px 0px 15px rgba(182,57,220,0.7),
+	0px 0px 20px rgba(182,57,220,0.6),
+	0px 0px 25px rgba(182,57,220,0.5);
+	padding-left: 75px;
+	}
+	#fx{font-size: 24px;color: #616B72;font-weight: 900;margin-top: 40px;float: left;}
+	#png{margin-top: 20px;height:68px;float: left;margin-left: 10px;}
+	#png img{margin:0 10px;float: left;cursor: pointer;}
+	#mask{width: 100%;height: 100%;background: #000;opacity: 0.5;filter:alpha(opacity=50);position: absolute;left: 0;top: 0;display: none;z-index: 10;}
+	#fen{position: absolute;left: 0px;top: 20px;display: none;z-index: 15;}
+</style>
+</head>
+<body>
+	<div class="qichen">
+		<div id="mask"></div>
+		<div class="qc_top">恭喜您,启辰车模已经属于您了!</div>
+		<div class="qc_con">
+			<p>请保持在本页面，凭页面代码到展台领取礼品!</p>
+			<div class="con_sz">
+				<div class="q">Q</div>
+				<div class="w">2</div>
+				<div class="e">3</div>
+				<div class="r">4</div>
+				<div class="t">T</div>
+			</div>
+			<img src="images/qc_07.jpg" alt="">
+		</div>
+		<div class="qc_footer">
+			<h2>不够过瘾？</h2>
+			<p>那么请留下您的联系方式,就有机会抽取启辰R30晨风一年使用权大奖哦！</p>
+			<div id="kai">
+				<a href="qichen5.html">启辰开回家</a>
+			</div>
+			<div id="fx">分享好友积攒人品:</div>
+			<div id="png">
+				<img src="images/weixin.png" alt="">
+				<img src="images/xlwb.png" alt="">
+				<img src="images/txwb.png" alt="">
+			</div>
+		</div>
+		<div id="fen">
+			<img src="images/share_pop.png" alt="">
+		</div>
+	</div>
+</body>
+<script>
+window.onload=function(){
+	var mask=document.getElementById('mask');
+	var fen=document.getElementById('fen');
+	var png=document.getElementById('png');
+	var imgs=png.getElementsByTagName('img');
+	for (var i = 0; i < imgs.length; i++) {
+		imgs[i].onclick=function(){
+			mask.style.display="block";
+			fen.style.display="block";
+		}
+	};
+}
+	
+</script>
+</html>

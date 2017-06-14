@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+.qichen{background: url(images/bg01.jpg);margin: 0 auto;width:640px;height: 1008px;position: relative;}
+.qc_top{width: 600px;padding-top: 50px;margin: 0 auto;padding-left: 20px;}
+.qc_top h2{font-size: 38px;color:#C20328;text-align: center;font-weight: 900;}
+.qc_top p{font-size: 22px;color:#6D7A80;line-height: 33px;margin: 20px auto;font-weight: 900;}
+.qc_con{width: 600px;margin: 0 auto;}
+#haoma{background: url(images/shuru2.jpg);width: 594px;height: 86px;margin-bottom: 30px;position: relative;}
+.ipt{width:496px;height: 84px;background: transparent;position: absolute;left:95px;top: 0px;font-size: 25px;color: #000;z-index: 5;}
+#tijiao{width: 433px;height: 97px;
+	background: url(images/btn01.png);
+	margin-left: 75px;
+}
+button{width: 433px;height: 97px;cursor:pointer;border-radius: 25px;background: transparent;border: none;font-size:40px;line-height: 97px;color:#FDFAFA;font-weight:900;font-style: italic;
+	text-shadow:0px 0px 10px rgba(182,57,220,0.8),
+	0px 0px 15px rgba(182,57,220,0.7),
+	0px 0px 20px rgba(182,57,220,0.6),
+	0px 0px 25px rgba(182,57,220,0.5);}
+#fx{font-size: 24px;color: #616B72;font-weight: 900;margin-top: 60px;float: left;padding-left: 50px;}
+#png{margin-top: 40px;height:68px;float: left;margin-left: 10px;}
+#png img{margin:0 10px;float: left;cursor: pointer;}
+#mask{width: 100%;height: 100%;background: #000;opacity: 0.5;filter:alpha(opacity=50);position: absolute;left: 0;top: 0;display: none;z-index: 10;}
+#cg{width: 582px;height: 380px;border: 8px solid #01266E;border-radius: 25px 25px 25px 25px;background: #fff;position: absolute;left: 20px; top:145px;display: none;z-index: 15;}
+#bu{width: 433px;height: 97px;
+background: url(images/btn01.png);margin-bottom: 30px;margin: 0 auto;}
+#cg h2{font-size: 50px;text-align: center;color:#022876;padding-top: 60px;font-weight: 900;}
+#cg p{font-size: 28px;color: #666;width: 412px;margin: 30px auto;}
+</style>
+</head>
+<body>
+	<div class="qichen">
+		<div id="mask"></div>
+		<div class="qc_top">
+			<h2>人品不错哦！</h2>
+			<p>恭喜您抽中价值30元的手机话费！请留下联系方式，24小时内话费将为您送上，请留意短信，谢谢！</p>
+			<img src="images/y10.png" alt="">
+			<p>请输入手机号码24小时内为您充值</p>
+		</div>
+		<div class="qc_con">
+			<div id="haoma">
+				<input type="text" class="ipt">
+			</div>
+			<div id="tijiao">
+				<button>确认提交</button>
+			</div>
+			<div id="fx">分享好友积攒人品:</div>
+			<div id="png">
+				<img src="images/weixin.png" alt="">
+				<img src="images/xlwb.png" alt="">
+				<img src="images/txwb.png" alt="">
+			</div>
+		</div>
+		<div id="cg">
+			<h2>提交成功！</h2>
+			<p>说好的16:00现场抽奖，启辰展台与您不见不散！</p>
+			<div id="bu">
+				<button>不见不散</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+var haoma=document.getElementById('haoma');
+var ipt=haoma.getElementsByTagName('input')[0];
+var tijiao=document.getElementById('tijiao');
+var btn=tijiao.getElementsByTagName('button')[0];
+var bu=document.getElementById('bu');
+var btn2=bu.getElementsByTagName('button')[0];
+window.onload=function(){
+	btn.onclick=function(){
+		if(ipt.value==''){
+			alert("亲，手机号不能为空！");
+		}else{
+			mask.style.display='block';
+			cg.style.display='block';
+			ipt.value='';
+		}
+	}
+	btn2.onclick=function(){
+		mask.style.display='none';
+		cg.style.display='none';
+	}
+}
+</script>
+</html>

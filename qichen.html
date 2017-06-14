@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+body{z-index: 5;}
+.qichen{background: url(images/bg01.jpg);margin: 0 auto;width:640px;height: 1008px;overflow: hidden;position: relative;}
+.qc_top{
+	width: 640px;height: 271px;
+	background: url(images/bg02.jpg);
+}
+.qc_gg{
+	width: 509px;height: 198px;
+	background: url(images/msyl.png);
+	margin: 20px auto;
+}
+#qc_con1,#qc_con2{
+	width: 433px;height: 97px;
+	background: url(images/btn01.png);
+}
+#qc_con1{margin-top: 50px;margin-left:100px;}
+#qc_con2{margin: 15px auto;}
+.ipt{width: 433px;height: 97px;cursor:pointer;border-radius: 25px;background: transparent;border: none;font-size:30px;line-height: 97px;color:#FDFAFA;font-weight:900;font-style: italic;
+	text-shadow:0px 0px 10px rgba(182,57,220,0.8),
+	0px 0px 15px rgba(182,57,220,0.7),
+	0px 0px 20px rgba(182,57,220,0.6),
+	0px 0px 25px rgba(182,57,220,0.5);
+}
+#qc_footer{margin-left: 250px;margin-top: 20px;}
+#qc_footer a{color:#003898;font-size:28px;font-weight:900;text-align: center;font-style: italic;text-decoration: underline;}
+#hd{height: 556px;width:460px;
+	border-radius: 25px 25px 25px 25px;
+	border: 6px solid #012670;
+	position: absolute;
+	top: 230px;
+	left: 85px;
+	background: #FFFFFF;
+	display: none;
+	z-index: 20;
+}
+#mask{
+	width: 100%;height: 100%;background: #000;opacity: 0.5;filter:alpha(opacity=50);position: absolute;left: 0;top: 0;display: none;
+}
+.sm{width:392px;height: 480px;padding-left: 25px;padding-top: 35px;}
+.sm h2{font-size: 22px;color: #1E326C;font-weight: 900;margin-bottom: 20px;}
+.sm p{font-size: 20px;color: #767676;font-weight: bold;text-indent: 40px;}
+#ms{width: 320px;height: 72px;
+	background: url(images/btn01.png);
+	background-size:contain;
+	margin: 20px auto;
+}
+#ms a,#div1 a,#div2 a{width:320px;height: 72px;cursor:pointer;border-radius: 25px;background: transparent;border: none;font-size:30px;line-height: 72px;color:#FDFAFA;font-weight:900;font-style: italic;
+	text-shadow:0px 0px 10px rgba(182,57,220,0.8),
+	0px 0px 15px rgba(182,57,220,0.7),
+	0px 0px 20px rgba(182,57,220,0.6),
+	0px 0px 25px rgba(182,57,220,0.5);
+}
+#ms a{padding-left: 95px;}
+#div1 a{padding-left:130px;}
+#div2 a{padding-left:95px;}
+#qr{width: 446px;height: 402px;border: 6px solid #002871;
+	border-radius: 25px 25px 25px 25px;
+	background: #fff;
+	position: absolute;
+	top: 240px;
+	left: 85px;
+	display: none;
+}
+#qr .div{font-size: 28px;color: #04266E;font-weight:900;padding-left: 30px;margin: 30px auto;}
+.div .d1{text-indent: 28px;margin-bottom: 20px;}
+.div .d2{text-indent: 84px;margin-bottom: 20px;}
+#div1,#div2{width: 320px;height: 72px;
+	background: url(images/btn01.png);
+	background-size:contain;
+	margin: 20px auto;}
+</style>
+</head>
+<body>
+	<div class="qichen">
+		<div id="mask"></div>
+		<div class="qc_top"></div>
+		<div class="qc_gg"></div>
+		<div id="qc_con1">
+			<input type="button" value="我在车展 马上拿奖" class="ipt">
+		</div>
+		<div id="qc_con2">
+			<a href="qichen22.html"><input type="button" value="不在现场 试试手气" class="ipt"></a>
+		</div>
+		<div id="qc_footer">
+			<a href="javascript:;" target="_self">活动说明</a>
+		</div>
+		<div id="hd">
+			<div class="sm">
+				<h2>活动说明</h2>
+				<p>抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强;</p>
+				<p>抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启;</p>
+				<p>心动了吗，那就马上行动！</p>
+				<p>参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动</p>
+				<div id="ms">
+					<a href="javascript:;">马上抽奖</a>
+				</div>
+			</div>
+		</div>
+		<div id="qr">
+			<div class="div">
+				<div class="d1">请确认你是否在车展现场，</div>
+				<div class="d2">以免无法兑奖，</div>
+				<div>不在车展现场还可抽取话费哦！</div>
+			</div>
+			<div id="div1">
+				<a href="qichen2.html" target="_self">确认</a>
+			</div>
+			<div id="div2">
+				<a href="javascript:;">重新选择</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+window.onload=function(){
+	var mask=document.getElementById('mask')
+	var con1=document.getElementById('qc_con1');
+	var ipt1=con1.getElementsByTagName('input')[0];
+	var con2=document.getElementById('qc_con2');
+	var ipt2=con2.getElementsByTagName('input')[0];
+	var qc_footer=document.getElementById('qc_footer');
+	var a=qc_footer.getElementsByTagName('a')[0];
+	var hd=document.getElementById('hd');
+	var ms=document.getElementById('ms');
+	var aa=ms.getElementsByTagName('a')[0];
+	var div2=document.getElementById('div2');
+	var aaa=div2.getElementsByTagName('a')[0];
+	a.onclick=function(){
+		mask.style.display="block";
+		hd.style.display="block";
+	}
+	aa.onclick=function(){
+		mask.style.display="none";
+		hd.style.display="none";
+	}
+	ipt1.onclick=function(){
+		mask.style.display="block";
+		qr.style.display="block";
+	}
+	aaa.onclick=function(){
+		mask.style.display="none";
+		qr.style.display="none";
+	}
+}
+</script>
+</html>

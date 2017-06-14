@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+	.qichen{background: url(images/bg01.jpg);margin: 0 auto;width:640px;height: 1008px;}
+	.qc_top{
+	width: 640px;height: 271px;
+	background: url(images/bg02.jpg);
+	}
+	.qc_m{
+	width: 370px;height: 70px;margin: 30px auto;
+	}
+	.m1{font-size: 36px;color: #00276A;text-align: center;font-weight: 900;margin-bottom: 10px;}
+	.m2{font-size: 20px;color: #676D71;font-weight: 900;}
+	#che{width: 600px;height: 555px;margin: 0 auto;overflow: hidden;}
+	a{float: left;margin-left: 2px;}
+	#che img{width:198px;height: 276px;}
+</style>
+</head>
+<body>
+	<div class="qichen">
+		<div class="qc_top"></div>
+		<div class="qc_m">
+			<div class="m1">幸运“触”手可及</div>
+			<div class="m2">轻触任何一款启辰车型牌即可参与抽奖</div>
+		</div>
+		<div id="che">
+			<a href="javascript:;"><img src="images/qc_01.png" alt=""></a>
+			<a href=""><img src="images/qc_02.png" alt=""></a>
+			<a href=""><img src="images/qc_03.png" alt=""></a>
+			<a href=""><img src="images/qc_04.png" alt=""></a>
+			<a href=""><img src="images/qc_05.png" alt=""></a>
+			<a href=""><img src="images/qc_06.png" alt=""></a>
+		</div>
+	</div>
+</body>
+<script>
+function getCookie(key){
+	var arr=document.cookie.split('; ');
+	for (var i = 0; i < arr.length; i++) {
+		var arr1=arr[i].split('=');
+		if(arr1[0]==key){
+			return arr1[1];
+		}
+	};
+	return false;
+}
+function setCookie(key,value,days){
+	var dates=new Date();
+	dates.setDate(dates.getDate()+days);
+	document.cookie=key+'='+value+'; expires='+dates;
+}
+function removeCookie(key){
+	setCookie(key,'22',-1);
+}
+var che=document.getElementById('che');
+var as=che.getElementsByTagName('a');
+for (var i = 0; i < as.length; i++) {
+	as[i].onclick=function(){
+		var rd=Math.ceil(Math.random()*10);
+		if(getcookie('kun')){
+			window.open('qichen33.html');
+		}else if(rd==10){
+			window.open("qichen6.html");
+			setCookie('kun','123',1);
+		}else if(rd==9){
+			window.open("qichen66.html");
+			setCookie('kun','123',1);
+		}else if(rd==8){
+			window.open("qichen666.html");
+			setCookie('kun','123',1);
+		}else{
+			window.open("qichen3.html");
+			setCookie('kun','123',1);
+		}
+	}
+};
+</script>
+</html>
